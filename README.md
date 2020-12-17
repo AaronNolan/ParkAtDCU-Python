@@ -1,4 +1,4 @@
-# This repo contains my semester long project for module CA377
+# This repo contains my semester project for module CA377
 
 ## CA377 parkatdcu Django app
 
@@ -43,7 +43,7 @@ entered address to any of the following carparks:
 wish to store this project
 3. In the terminal type: '<b>git clone (paste in url)</b>'
 4. When it is cloned go through this path:
-<b>2021-ca377-nolana67-parkatdcu -> src -> ca377</b>
+<b>ParkAtDCU -> src -> ca377</b>
 5. Type in terminal: '<b>python manage.py migrate</b>'
 6. Type in terminal: '<b>python manage.py loaddata ../../data/campus.json</b>' 
 7. Type in terminal: '<b>python manage.py loaddata ../../data/carpark.json</b>' 
@@ -54,5 +54,5 @@ wish to store this project
 
 ### How to run the test cases:
 
-* Go to ca377 directory: <b>2021-ca377-nolana67-parkatdcu -> src -> ca377</b>
+* Go to ca377 directory: <b>ParkAtDCU -> src -> ca377</b>
 * In the terminal type: '<b>python manage.py test</b>'
