@@ -1,15 +1,17 @@
-# CA377 parkatdcu Django app
+# This repo contains my semester long project for module CA377
 
-## ParkAtDCU
+## CA377 parkatdcu Django app
+
+### ParkAtDCU
 
 This ParkAtDCU App is to display real-time information for the carparks in
 DCU. This contains:
 
 * Two JSON files used to initiate a DB with objects 
-* An API webservice URL to retrieve realtime carpark data
+* An API webservice URL to retrieve realtime carpark data (API Key needs to be filled to work locally)
 
 
-## Extra Functionality
+### Extra Functionality
 
 This app also uses Google APIs to retrieve directions from any correctly 
 entered address to any of the following carparks:
@@ -20,21 +22,21 @@ entered address to any of the following carparks:
 
 
 
-## Installation Instructions
-### WARNINGS
+### Installation Instructions
+#### WARNINGS
 **WARNING:**  Depending on your local setup 
     **'python'** may be **'python3'**
     
 **WARNING:**  Depending on your local setup 
     **'pip'** may be **'pip3'**
 
-### Check these modules are installed:
+#### Check these modules are installed:
 
 * Type in terminal: '<b>pip install Pillow</b>'
 * Type in terminal: '<b>pip install googlemaps</b>' 
 
 
-### Instructions:
+#### Instructions:
 
 1. Select Clone -> Copy the <b>Clone with HTTPS</b> URL
 2. Go to local terminal and direct to new empty directory where you
@@ -50,7 +52,7 @@ wish to store this project
 10. Type in terminal: '<b>python manage.py runserver</b>'
 
 
-## How to run the test cases:
+### How to run the test cases:
 
 * Go to ca377 directory: <b>2021-ca377-nolana67-parkatdcu -> src -> ca377</b>
 * In the terminal type: '<b>python manage.py test</b>'
