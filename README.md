@@ -8,12 +8,12 @@ This ParkAtDCU App is to display real-time information for the carparks in
 DCU. This contains:
 
 * Two JSON files used to initiate a DB with objects 
-* An API webservice URL to retrieve realtime carpark data (API Key needs to be filled to work locally)
+* An API webservice URL to retrieve realtime carpark data
 
 
 ### Extra Functionality
 
-This app also uses Google APIs to retrieve directions from any correctly 
+This app also uses Google APIs (API Key needs to be filled to work locally) to retrieve directions from any correctly 
 entered address to any of the following carparks:
 
 * Glasnevin
