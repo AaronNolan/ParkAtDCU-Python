@@ -1,0 +1,30 @@
+[
+  {
+    "model": "parkatdcu.Campus",
+    "fields": {
+      "campus_id": 1,
+      "name": "Glasnevin"
+    }
+  },
+  {
+    "model": "parkatdcu.Campus",
+    "fields": {
+      "campus_id": 2,
+      "name": "St. Pats"
+    }
+  },
+  {
+      "model": "parkatdcu.Campus",
+      "fields": {
+        "campus_id": 3,
+        "name": "All Hallows"
+      }
+  },
+  {
+      "model": "parkatdcu.Campus",
+      "fields": {
+        "campus_id": 4,
+        "name": "DCU Alpha"
+      }
+  }
+]

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5b287176-6f2a-41e8-a10d-d218df33273e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/time_func.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../form.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/maps/maps.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ca377/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../ca377/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ca377/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../ca377/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../templates/base_layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../templates/base_layout.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1ksaqHZnRnnt3cUt3Y8QQJT9g5A" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ca377" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b287176-6f2a-41e8-a10d-d218df33273e" name="Default Changelist" comment="" />
+      <created>1606491941569</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606491941569</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1500" y="460" key="FileChooserDialogImpl" timestamp="1606491956662">
+      <screen x="0" y="0" width="3440" height="1410" />
+    </state>
+    <state x="1500" y="460" key="FileChooserDialogImpl/0.0.3440.1410@0.0.3440.1410" timestamp="1606491956662" />
+  </component>
+</project>

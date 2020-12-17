@@ -1,0 +1,132 @@
+[
+  {
+    "model": "parkatdcu.Carpark",
+    "fields": {
+      "carpark_id": 1,
+      "name": "Multi-storey",
+      "campus_id": 1,
+      "spaces":800,
+      "disabled_spaces":20
+    }
+  },
+  {
+    "model": "parkatdcu.Carpark",
+    "fields": {
+      "carpark_id": 2,
+      "name": "Creche",
+      "campus_id": 1,
+      "spaces":235,
+      "disabled_spaces":2
+    }
+  },
+  {
+    "model": "parkatdcu.Carpark",
+    "fields": {
+      "carpark_id": 3,
+      "name": "Invent",
+      "campus_id": 1,
+      "spaces":107,
+      "disabled_spaces":2
+    }
+  },
+  {
+    "model": "parkatdcu.Carpark",
+    "fields": {
+      "carpark_id": 4,
+      "name": "Library",
+      "campus_id": 1,
+      "spaces":100,
+      "disabled_spaces":6
+    }
+  },
+  {
+    "model": "parkatdcu.Carpark",
+    "fields": {
+      "carpark_id": 5,
+      "name": "Sports Car Park",
+      "campus_id": 1,
+      "spaces":90,
+      "disabled_spaces":2
+    }
+  },
+  {
+    "model": "parkatdcu.Carpark",
+    "fields": {
+      "carpark_id": 6,
+      "name": "Residences",
+      "campus_id": 1,
+      "spaces":80,
+      "disabled_spaces":2
+    }
+  },
+  {
+    "model": "parkatdcu.Carpark",
+    "fields": {
+      "carpark_id": 7,
+      "name": "CP2",
+      "campus_id": 2,
+      "spaces":100,
+      "disabled_spaces":5
+    }
+  },
+  {
+    "model": "parkatdcu.Carpark",
+    "fields": {
+      "carpark_id": 8,
+      "name": "CP3",
+      "campus_id": 2,
+      "spaces":100,
+      "disabled_spaces":5
+    }
+  },
+  {
+    "model": "parkatdcu.Carpark",
+    "fields": {
+      "carpark_id": 9,
+      "name": "CP4",
+      "campus_id": 2,
+      "spaces":100,
+      "disabled_spaces":5
+    }
+  },
+  {
+    "model": "parkatdcu.Carpark",
+    "fields": {
+      "carpark_id": 10,
+      "name": "CP5",
+      "campus_id": 2,
+      "spaces":100,
+      "disabled_spaces":5
+    }
+  },
+  {
+    "model": "parkatdcu.Carpark",
+    "fields": {
+      "carpark_id": 11,
+      "name": "CP6",
+      "campus_id": 2,
+      "spaces":100,
+      "disabled_spaces":5
+    }
+  },
+  {
+    "model": "parkatdcu.Carpark",
+    "fields": {
+      "carpark_id": 12,
+      "name": "O'Donnell House",
+      "campus_id": 3,
+      "spaces":100,
+      "disabled_spaces":5
+    }
+  },
+  {
+    "model": "parkatdcu.Carpark",
+    "fields": {
+      "carpark_id": 13,
+      "name": "Purcell House",
+      "campus_id": 3,
+      "spaces":200,
+      "disabled_spaces":10
+    }
+  }
+]

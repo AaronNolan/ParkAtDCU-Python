@@ -1,0 +1,147 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+<!-- If there was an error with the API input value (2 variations)-->
+{% if err %}
+    <div class="row">
+        <div class="col p-0">
+            <div class="card border-danger mb-3">
+                <div class="card-body text-danger text-center">
+                    <h4> {{ err }}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% else %}
+    <!-- Real time directions heading -->
+    <h1>ParkAtDCU Real Time Directions</h1>
+    <br>
+    <hr>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 bg-dark text-white p-2 m-0">
+                <h2>Real Time Directions </h2>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <h4><b>Origin: </b></h4>
+            </div>
+            <div class="col-sm-5">
+                <h4><b>Destination: </b></h4>
+            </div>
+        </div>
+        <!-- Form to get origin and destination -->
+        <form action="/maps/" method="post">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-sm-5">
+                    {{ form.address }}
+                </div>
+                <div class="form-group col-sm-5">
+                    {{ form.carpark }}
+                </div>
+                <div class="col-sm-2">
+                    <input class = "btn btn-primary" type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- if there was no error -->
+    {% if status is True %}
+        <br>
+        <hr>
+        <br>
+        <!-- Results for journey summary -->
+        <div class="container">
+            <div class="row">
+                <div class="col-4 bg-dark text-white p-2 m-0">
+                    <h2>Journey Summary</h2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4 class="text-center bg-light p-3"><b>Total Distance: </b>{{ distance }}</h4>
+                </div>
+                <div class="col-sm-6">
+                    <h4 class="text-center bg-light p-3"><b>Total Duration: </b>{{ duration }}</h4>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+
+        <!-- Results for journey in detail-->
+        <div class="container">
+            <div class="row">
+                <div class="col-4 bg-dark text-white p-2 m-0">
+                    <h2>Journey Details</h2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Headings -->
+        <div class="container">
+            <hr>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="text-center text-info">
+                        <h5><b>Step</b></h5>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="text-info">
+                        <h5><b>Direction</b></h5>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="text-info">
+                        <h5><b>Distance</b></h5>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="text-info">
+                        <h5><b>Duration</b></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detailed step cards -->
+        {% for i, step, dis, dur in steps %}
+        <div class="container">
+            <hr>
+            <div class="row">
+                <div class="col-sm-2 text-center">
+                    {{ i }}
+                </div>
+                <div class="col-sm-6">
+                    {% autoescape off %}{{ step }}{% endautoescape %}
+                </div>
+                <div class="col-sm-2">
+                    {{ dis }}
+                </div>
+                <div class="col-sm-2">
+                    {{ dur }}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    {% endif %}
+<br>
+<hr>
+<br>
+<br>
+<br>
+{% endif %}
+{% endblock %}

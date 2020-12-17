@@ -1,0 +1,67 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+
+<!-- Campus check -->
+<div class="container">
+    {% if campus_err_msg == "No such campus" %}
+        <div class="row">
+            <div class="col p-0">
+                <div class="card border-danger mb-3">
+                    <div class="card-body text-danger text-center">
+                        <h4> No such campus </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <div class="row">
+            <div class="col-4 bg-dark text-white p-2 m-0">
+                <h2> {{ campus }} </h2>
+            </div>
+        </div>
+        <br>
+        <!-- Carpark check -->
+        {% if carpark_err_msg == "No Carparks Found" %}
+            <br>
+            <div class="col p-0">
+                <div class="card border-danger mb-3">
+                    <div class="card-body text-danger text-center">
+                        <h4> No carparks found </h4>
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            <!-- Output of values -->
+            {% for carpark in carparks %}
+                {% for cp, rt in cp_data %}
+                    {% if carpark.name == cp.name %}
+                    <div class="row">
+                        <div class="col-3">
+                            <h6>{{ carpark.name }}</h6>
+                        </div>
+                        <div class="col-2">
+                            {{ carpark.spaces }} spaces
+                        </div>
+                        <div class="col-3">
+                            {{ carpark.disabled_spaces }} disabled spaces
+                        </div>
+                        {% if rt != "No real time information available" and rt != "0 spaces" %}
+                            <div class="col-4 text-success">
+                                Real Time Spaces: {{ rt }}
+                            </div>
+                        {% else %}
+                            <div class="col-4 text-danger">
+                                {{ rt }}
+                            </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+    {% endif %}
+
+</div>
+<hr>
+{% endblock %}

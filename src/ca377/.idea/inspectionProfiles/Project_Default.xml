@@ -1,0 +1,19 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="LossyEncoding" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="main.mysite.urls.maps" />
+          <option value="src.ca377.parkatdcu.models.Carpark.objects" />
+          <option value="googlemaps.client.Client.geocode" />
+          <option value="googlemaps.client.Client.reverse_geocode" />
+          <option value="googlemaps.client.Client.directions" />
+          <option value="main.articles.models.Article.objects" />
+          <option value="main.articles.models.ArticleType.objects" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

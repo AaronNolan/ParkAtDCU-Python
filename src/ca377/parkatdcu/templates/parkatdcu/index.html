@@ -1,0 +1,74 @@
+{% extends 'base_layout.html' %}
+{% load static from static %}
+{% block content %}
+<!-- Welcome heading -->
+<h1>Welcome to ParkAtDCU</h1>
+<br>
+<hr>
+<br>
+<div class="container">
+    <!-- Real time info heading -->
+    <div class="row">
+        <div class="col-4 bg-dark text-white p-2 m-0">
+            <h2> Real Time Information</h2>
+        </div>
+    </div>
+
+    <br>
+
+    <form action="{% url 'parkatdcu:carparks' %}" method="get">
+        <div class="row">
+            <div class="col-4 text-right m-2">
+                <h4><b>Search for campus:</b></h4>
+            </div>
+            <div class="col-4">
+                {{ form.campus }}
+            </div>
+            <div class="col-3">
+                <input class="btn btn-primary btn-block p-2 m-1" type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+
+    <br>
+</div>
+
+<hr>
+<br>
+<!-- Real time directions heading -->
+<div class="container">
+    <div class="row">
+        <div class="col-4 bg-dark text-white p-2 m-0">
+            <h2>Real Time Directions</h2>
+        </div>
+    </div>
+    <br>
+    <!-- Details for user -->
+    <div class="row">
+        <div class="col-6 m-2 text-left">
+            <h4><b>Directions are currently available for:</b></h4>
+            <ul>
+                <li>Glasnevin</li>
+                <li>St. Pats</li>
+                <li>All Hallows</li>
+            </ul>
+            <br>
+            <h4><b>These directions provide:</b></h4>
+            <ul>
+                <li>Real time straight from Google Directions API</li>
+                <li>The fastest route available</li>
+            </ul>
+            <br>
+            <a href="{% url 'maps:index' %}" class="btn btn-primary text-white p-3 m-3">Get your directions here</a>
+            <br>
+        </div>
+        <div>
+            <img src="{% static 'dcu_campi.png' %}"
+                 alt="Map of greater area around DCU with all campuses highlighted, copyright of DCU"
+                 width="500">
+        </div>
+    </div>
+    <br>
+    <hr>
+</div>
+{% endblock %}
